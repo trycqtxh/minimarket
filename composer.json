@@ -10,7 +10,8 @@
         "laravelcollective/html": "~5.0",
         "gloudemans/shoppingcart": "^2.2",
         "spatie/laravel-fractal": "^2.0",
-        "maatwebsite/excel": "~2.1.0"
+        "maatwebsite/excel": "~2.1.0",
+        "liuggio/spawn": "0.0-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -50,5 +51,19 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "liuggio/spawn",
+                "version":"0.0-dev",
+                "source": {
+                    "url": "https://github.com/liuggio/spawn.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        }
+    ]
 }

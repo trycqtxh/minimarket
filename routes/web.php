@@ -1,5 +1,6 @@
 <?php
 
+
 Route::group(['middleware'=>'web'], function(){
     Route::get('login', [
         'uses'=>'AuthController@getLogin',
